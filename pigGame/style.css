@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 83vh;
+  background: linear-gradient(to top right, #000b11, #0488a3);
+  color: #fafbfc;
+}
+
+.players {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 100px;
+  width: 60%;
+}
+
+.playerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+.currentScore {
+  font-size: 50px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+  align-items: center;
+  width: 50%;
+  background-color: #000b11;
+  text-align: center;
+  padding: 70px 0px;
+  transition: all 0.5s;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #707171;
+  height: 70vh;
+  align-items: center;
+  width: 50%;
+  padding: 70px 0px;
+  transition: all 0.5s;
+}
+
+.new {
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  left: 42%;
+  align-items: center;
+  gap: 80px;
+}
+
+img {
+  width: 50px;
+}
+
+.score {
+  padding: 10px 40px;
+  background-color: rgb(94, 8, 8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.current {
+  font-size: 20px;
+}
+
+.scoreNumber {
+  font-size: 24px;
+  margin-top: 10px;
+}
+.subButtons {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  text-align: center;
+}
+
+.roll {
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  opacity: 0.8;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(86, 4, 4);
+  color: #eee;
+}
+
+.active {
+  opacity: 0.5;
+}
+
+.hide {
+  opacity: 0;
+}
+
+@media (max-width: 920px) {
+  .buttons {
+    left: 41%;
+  }
+  .btn {
+    padding: 5px 5px;
+    border-radius: 5px;
+  }
+  img {
+    width: 42px;
+  }
+  .score {
+    padding: 8px 30px;
+  }
+  .current {
+    font-size: 16px;
+  }
+  .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .currentScore {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .players {
+    width: 80%;
+  }
+  .buttons {
+    left: 40%;
+  }
+  img {
+    width: 38px;
+  }
+  .right {
+    padding: 60px 0px;
+  }
+  .left {
+    padding: 60px 0px;
+  }
+}
+@media (max-width: 500px) {
+  .players {
+    width: 90%;
+  }
+  .buttons {
+    left: 38%;
+  }
+  img {
+    width: 34px;
+  }
+  .btn {
+    padding: 2px 2px;
+    border-radius: 5px;
+  }
+  .score {
+    padding: 8px 30px;
+  }
+  .current {
+    font-size: 12px;
+  }
+  .title {
+    margin-bottom: 18px;
+    font-size: 20px;
+  }
+  .currentScore {
+    font-size: 32px;
+  }
+}
